@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display:ital@1&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*ME PERMITE DESLIZAR CUANDO HAGO CLIC EN LOS LINKS DEL MENU*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*MENU*/
+.contenedor-header{
+    background: black
+    width 100%
+    top 0;
+    left: 0;
+    position:fixed
+    z-index 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+    font-family: righteous;
+    font-size: 36px;
+    color: black
+    text-decoration none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: aqua
+    margin 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: rgb(0, 3, 10);
+}
+
+.nav-responsive{
+    background-color: aqua;
+    color: #f5f3f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION INICIO*/
+.inicio{
+    background: linear-gradient(to top,rgba(1, 35, 70, 0.8), rgb(1, 44, 73));
+    color: rgb(4, 182, 182);
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326
+    max- width 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px; 
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px; 
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px; 5px;
+    font-size 20px;
+    transition 3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: aqua;
+}
+/*SOBRE MI*/
+.sobremi{
+    background-color: white;
+    color: black;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    background-color: white
+    font-size 20px;
+    font-family Verdana, Geneva, Tahoma, sans-serif
+    text-align: center;
+    padding 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: aqua;
+    font-weight: bold;
+}
+
+
+/*HABLEMOS*/
+
+.hablemos{
+    background-color: aqua;
+    color: aqua;
+    padding: 50px 20px;
+}
+.hablemos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hablemos h3{
+    text-align: center;
+    font-size: 48px;
+    padding: 20px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+hablemos .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+ul li  {
+margin-right: 0;
+}
+nav ul li a{
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+    padding: 50px;
+}
+
+/*SECCION CONTACTO*/
+.contacto{
+    background-color: white;
+    color: aqua;
+    padding: 50px 0;
+}
+
+.contacto .contenido.seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: aqua;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aqua;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overly{
+    width: 100%;
+}
+
+.footer {
+    background-color:rgb(1, 44, 73)
+    color rgb(1, 44, 73)
+    padding 80px 0 50px 0;
+    text-align center;
+    position relative;
+    width 100%;
+}
+
+footer .redes{
+    margin-boton:20px
+}
+footer .redes a{
+    color:rgb(1, 44, 73)
+    display inline-block;
+    text-decoration: none;
+    border: 1px; 
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px; 5px;
+    font-size: 20px;
+    transition 3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    color:rgb(1, 44, 73)
+    position absolute;
+    left 50%;
+    transform: translateX(-50%);
+    top-25px
+    border-radius: 50%;
+    line-height 50px;
+    font-size 18px;
+    }
+
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:980px){
+nav{
+        display: none;
+    }
+    .nav-responsive{
+display: block;
+    }
+    nav.responsive{
+        display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: black;
+    width: 180px;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    }
+    }
+
+    @media screen and (max-width:700px){
+        .sobremi .fila{
+            display: block;
+        }
+        .sobremi .fila .col{
+            width: fit-content;
+        }
+    }
+    
+   
+    
+    
